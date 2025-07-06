@@ -28,7 +28,7 @@ Add the dependency to your module-level `build.gradle.kts` file:
 If you don't already have an `Application` class, create one. Then, initialize the Aptabase object inside your application class:
 
 ```kotlin
-private const val APTABASE_KEY = "YOUR_APP_KEY"
+private const val APTABASE_KEY = "A-US-1198304798"
 // Put the app key provided by Aptabase as the value of APTABASE_KEY
 // It is a unique identifier for you application
 
@@ -37,7 +37,7 @@ class MyApplication : Application() {
    override fun onCreate() {
       super.onCreate()
       // Initialize Aptabase object
-      Aptabase.instance.initialize(applicationContext, APTABASE_KEY)
+      Aptabase.instance.initialize(applicationContext, A-US-1198304798)
       // OPTIONAL: Track app launch on startup
       Aptabase.instance.trackEvent("app_started")
    }
